@@ -1,0 +1,133 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 30px 10px;
+  background: #fff;
+  color: #222;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Стиль для заголовка */
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  background: linear-gradient(90deg, #4a4e69 0%, #9a8c98 100%);
+  border-radius: 14px;
+  padding: 28px 0 24px 0;
+  box-shadow: 0 4px 18px rgba(74,78,105,0.13);
+  text-shadow: 0 2px 8px #22223b33;
+}
+
+#projects-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  font-size: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+#projects-table th, #projects-table td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 8px;
+  text-align: left;
+}
+
+#projects-table th {
+  background: #faf9fa;
+  font-weight: 500;
+  font-size: 1.05rem;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+}
+
+#projects-table tr:nth-child(even) {
+  background: #f7f7fa;
+}
+
+#projects-table tr:hover {
+  background: #e9e9f5;
+}
+
+#projects-table a {
+  color: #2a4b9c;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+#projects-table th:first-child, #projects-table td:first-child {
+  text-align: center;
+  width: 50px;
+}
+
+#projects-table th, #projects-table td {
+  vertical-align: middle;
+}
+
+/* Стиль для блоку фільтрів */
+.filter-bar {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 22px;
+  align-items: center;
+  background: linear-gradient(90deg, #f2e9e4 0%, #c9ada7 100%);
+  border-radius: 10px;
+  padding: 18px 22px;
+  box-shadow: 0 2px 12px rgba(154,140,152,0.10);
+}
+
+.filter-bar label {
+  font-size: 1rem;
+  color: #22223b;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#department-filter, #region-filter, #search-input {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+#department-filter:focus, #region-filter:focus, #search-input:focus {
+  border-color: #4a4e69;
+  outline: none;
+}
+
+@media (max-width: 700px) {
+  .filter-bar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+  }
+  .filter-bar label {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
