@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Картки проектів</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="cards-title">Перелік наукових робіт МАН України 2024</h1>
+    <div class="filter-bar">
+        <label>
+            Відділення:
+            <select id="department-filter-cards">
+                <option value="">Всі</option>
+            </select>
+        </label>
+        <label>
+            Область:
+            <select id="region-filter-cards">
+                <option value="">Всі</option>
+            </select>
+        </label>
+        <label style="margin-left: auto;">
+            Пошук: <input type="text" id="search-input-cards" style="width: 160px;">
+        </label>
+        <button class="back-btn" onclick="window.location.href='index.html'">На головну</button>
+    </div>
+    <div id="cards-container"></div>
+    <script src="js/cards.js"></script>
+</body>
+</html>
