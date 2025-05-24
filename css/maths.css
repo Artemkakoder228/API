@@ -1,0 +1,6 @@
+.results-table {
+    background: #f5faff;
+}
+.place-gold td, .place-gold { background: #ffe082 !important; }
+.place-silver td, .place-silver { background: #e0e0e0 !important; }
+.place-bronze td, .place-bronze { background: #ffcc80 !important; }

@@ -1,0 +1,160 @@
+.results-title {
+    display: block;
+    width: 950px;
+    max-width: 98vw;
+    margin: 38px auto 14px auto;
+    text-align: center;
+    font-size: 2.6rem; /* менший шрифт */
+    font-weight: 900;
+    color: #fff;
+    background: linear-gradient(90deg, #4a4e69 0%, #9a8c98 100%);
+    border-radius: 28px;
+    padding: 40px 0 30px 0;
+    box-shadow: 0 6px 24px rgba(74,78,105,0.15);
+    letter-spacing: 2px;
+}
+.results-subtitle {
+    text-align: center;
+    font-size: 1.35rem;
+    margin-bottom: 36px;
+    color: #22223b;
+    font-weight: 600;
+}
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+.subject-card {
+    background: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(154,140,152,0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 10px 18px 10px;
+    cursor: pointer;
+    transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
+    min-height: 120px;
+    border: 3px solid transparent;
+    position: relative;
+}
+.subject-card:hover, .subject-card:focus {
+    transform: scale(1.06) rotate(-1deg);
+    box-shadow: 0 6px 24px rgba(74,78,105,0.18);
+    background: linear-gradient(120deg, #a6c1ee 0%, #fbc2eb 100%);
+    border-color: #ffd600;
+    outline: none;
+}
+.subject-icon {
+    font-size: 2.2rem;
+    margin-bottom: 14px;
+}
+.subject-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #22223b;
+    text-align: center;
+}
+#results-info {
+    max-width: 900px;
+    margin: 48px auto 0 auto;
+    min-height: 80px;
+    transition: min-height 0.2s;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+#results-info.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.sections-list {
+    margin-bottom: 28px;
+}
+.section-btn {
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(90deg,#4a4e69 0%,#9a8c98 100%);
+    color: #fff;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #22223b22;
+    transition: background 0.18s, transform 0.13s;
+}
+.section-btn:hover, .section-btn:focus {
+    background: linear-gradient(90deg,#9a8c98 0%,#4a4e69 100%);
+    transform: scale(1.06);
+}
+.winners-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.winner-card {
+    margin-bottom: 14px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #22223b11;
+    font-size: 1.08rem;
+}
+.section-title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+.place-gold td, .place-gold { background: #ffe082 !important; }
+.place-silver td, .place-silver { background: #e0e0e0 !important; }
+.place-bronze td, .place-bronze { background: #ffcc80 !important; }
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.results-table th, .results-table td {
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    text-align: center;
+}
+.main-btn {
+    display: block;
+    margin: 0 auto 24px auto;
+    padding: 12px 36px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 24px;
+    border: none;
+    background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+    color: #22223b;
+    box-shadow: 0 2px 12px rgba(154,140,152,0.13);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    letter-spacing: 1px;
+}
+.main-btn:hover, .main-btn:focus {
+    background: linear-gradient(90deg, #c2e9fb 0%, #a1c4fd 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(74,78,105,0.18);
+    color: #22223b;
+}
+@media (max-width: 900px) {
+    .subjects-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+    }
+}
+@media (max-width: 600px) {
+    .subjects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+    .results-title {
+        font-size: 2rem;
+        padding: 16px 0 12px 0;
+    }
+}

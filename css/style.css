@@ -325,3 +325,71 @@ header nav ul li button:hover {
   box-shadow: 0 4px 18px rgba(74,78,105,0.13);
   text-shadow: 0 2px 8px #22223b33;
 }
+
+.results-btn {
+  display: block;
+  margin: 0 auto 32px auto;
+  padding: 16px 38px;
+  background: linear-gradient(90deg, #ffd600 0%, #ffb300 100%);
+  color: #22223b;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(255, 214, 0, 0.18);
+  transition: 
+    background 0.2s, 
+    box-shadow 0.2s, 
+    transform 0.18s cubic-bezier(.4,2,.6,1), 
+    letter-spacing 0.18s cubic-bezier(.4,2,.6,1);
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px #fffbe633;
+  text-align: center;
+  width: fit-content;
+  min-width: 260px;
+  text-decoration: none; /* прибирає підкреслення */
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.results-btn:hover, .results-btn:focus {
+  background: linear-gradient(90deg, #ffe066 0%, #ffd600 100%);
+  box-shadow: 0 8px 32px rgba(255, 214, 0, 0.28);
+  transform: translateY(-3px) scale(1.045) rotate(-1deg);
+  letter-spacing: 1.5px;
+}
+
+.results-btn::after {
+  content: "";
+  position: absolute;
+  left: -50%;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.06) 60%, rgba(255,255,255,0.18) 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.results-btn:hover::after, .results-btn:focus::after {
+  opacity: 1;
+  animation: shine 0.7s linear;
+}
+
+@keyframes shine {
+  0% {
+    left: -60%;
+    opacity: 0.2;
+  }
+  60% {
+    left: 60%;
+    opacity: 0.4;
+  }
+  100% {
+    left: 120%;
+    opacity: 0;
+  }
+}
