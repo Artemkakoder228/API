@@ -1,7 +1,10 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   padding: 30px 10px;
-  background: #fff;
+  background: 
+      linear-gradient(rgba(30, 34, 60, 0.22), rgba(30, 34, 60, 0.22)),
+      url('../images/rm347-porpla-02-a-01.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #222;
 }
 

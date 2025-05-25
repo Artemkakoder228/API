@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Результати</title>
+    <link rel="icon" type="image/png" href="images/images.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/results.css">
 </head>
@@ -60,8 +61,26 @@
             <div class="subject-name">Інформаційні технології</div>
         </div>
     </div>
-    <div class="subject-label" id="subject-label"></div>
+    <div class="subject-label-row" id="subject-label-row" style="display:none;">
+        <div id="filters-left" class="filters-side"></div>
+        <div class="subject-label" id="subject-label"></div>
+        <div id="filters-right" class="filters-side"></div>
+    </div>
     <div id="results-info"></div>
+    <div id="filters">
+        <label for="place-filter" class="filter-label">Місце:</label>
+        <select id="place-filter">
+            <option value="">Всі місця</option>
+            <option value="І">І місце</option>
+            <option value="ІІ">ІІ місце</option>
+            <option value="ІІІ">ІІІ місце</option>
+        </select>
+        <label for="region-filter" class="filter-label">Область:</label>
+        <select id="region-filter">
+            <option value="">Всі області</option>
+            <!-- області додаються динамічно -->
+        </select>
+    </div>
     <script src="js/results.js"></script>
 </body>
 </html>
