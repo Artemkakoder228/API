@@ -293,3 +293,48 @@
 #filters select:focus {
     display: none !important;
 }
+
+/* Модальне вікно */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(34,34,43,0.45);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 18px;
+  padding: 32px 28px 24px 28px;
+  max-width: 700px;
+  width: 95vw;
+  box-shadow: 0 8px 32px rgba(74,78,105,0.18);
+  position: relative;
+  text-align: left;
+}
+.modal-close {
+  position: absolute;
+  top: 18px; right: 24px;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.modal-close:hover { color: #22223b; }
+#modal-posters {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: flex-start;
+}
+#modal-posters img {
+  max-width: 180px;
+  max-height: 220px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(74,78,105,0.13);
+  background: #faf9fa;
+}
